@@ -1,0 +1,71 @@
+
+.toggle {
+	@width: 40px;
+	@height: 20px;
+	display: none;
+
+	// add default box-sizing for this scope
+	&, &:after, &:before,
+	& *, & *:after, & *:before,
+	& + .toggle-btn {
+		box-sizing: border-box;
+
+		&::selection {
+			background: none;
+
+		}
+	}
+
+	+ .toggle-btn {
+		outline: 0;
+		display: inline-block;
+		height: 2em;
+		position: relative;
+		cursor: pointer;
+		// user-select: none;
+		min-width: 120px;
+		padding-right: @width + 10px;
+
+		&:after,
+		&:before {
+			position: absolute;
+			display: block;
+			content: "";
+
+		}
+
+		&:after {
+			top: 2px;
+			right: @width - @height + 2px;
+			background: #fff;
+			width: @height - 4px;
+			height: @height - 4px;
+			.border-radius(50%);
+			.transition(all 200ms);
+
+		}
+		&:before {
+			top: 0;
+			right: 0;
+			background: #ccc;
+			border-radius: 2em;
+			padding: 2px;
+			width: @width;
+			height: @height;
+			.transition(all 200ms);
+
+		}
+	}
+
+	&:checked{
+		+ .toggle-btn{
+
+			&:before {
+				background: #28b62c;
+			}
+			&:after{
+				right: 2px;
+			}
+		}
+	}
+}

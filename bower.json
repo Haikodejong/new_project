@@ -1,0 +1,26 @@
+{
+  "name": "src",
+  "version": "0.0.0",
+  "authors": [
+    "Haiko de Jong <haiko@acato.nl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "backbone": "~1.2.3",
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4",
+    "lesshat": "~3.0.2",
+    "modernizr": "~2.8.3",
+    "underscore": "~1.8.3",
+    "d3": "~3.5.12",
+    "moment": "~2.10.6",
+    "js-xls": "~0.7.5"
+  }
+}
