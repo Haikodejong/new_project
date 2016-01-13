@@ -1,45 +1,10 @@
+// Mixins library
 @import '../../bower_components/lesshat/build/lesshat.less';
 
-@import 'components/chart.less';
-@import 'components/toggle-button.less';
-
+// bootstrap
 @import 'core/bootstrap.less';
 @import 'core/variables.less';
 
+@import 'atoms/buttons.less';
+
 @import 'views/home.less';
-
-select {
-	padding: 15px 20px;
-	margin: 20px auto;
-	display: block;
-	text-align: center;
-	border: none;
-	border-bottom: 3px solid #000;
-	font-size: 30px;
-	cursor: pointer;
-	background-color: none;
-	.appearance(none);
-	.border-radius(0);
-
-	&:hover {
-		background-color: pink;
-	}
-
-	&:focus {
-		outline: none;
-	}
-
-}
-
-#hover {
-	width: 250px;
-	display: block;
-	position: fixed;
-	padding: 20px;
-	font-size: 10px;
-	background-color: rgba(255,255,255,1);
-	color: #333;
-	z-index: 999999999;
-	top: 100%;
-	left: 0;
-}

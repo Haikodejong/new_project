@@ -1,3 +1,4 @@
+App = {};
 $(function() {
 
     $window = $(window);
