@@ -1,4 +1,4 @@
-var projectName = 'new project',
+var projectName = '[project]',
     dist = 'public_html/',
     gulp = require('gulp'),
     plugins = require('gulp-load-plugins')(),
