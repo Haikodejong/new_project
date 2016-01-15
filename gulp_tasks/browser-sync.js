@@ -7,7 +7,7 @@ module.exports = function (gulp, plugins, helpers) {
                 './public_html/**/*.js'
             ],
             {
-                proxy: 'll.staging',
+                proxy: '[project].staging',
                 files: [
                     {
                         match: [
